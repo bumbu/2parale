@@ -1,0 +1,240 @@
+@import "../components/bootstrap/dist/css/bootstrap.css"
+
+// System imports
+@import "nib"
+
+$orange = #fa6900
+$blue = #70a9c6
+$green = #75b953
+$red = red
+$gray = #898989
+
+/*************************
+  Available on all pages
+**************************/
+
+html, body
+  height 100%
+
+body
+  font-size 14px
+  background #F9FAEC
+
+.header
+  background #98c5d1
+  height 130px
+
+.container
+  width 980px
+
+.footer
+  background #23272A
+  height 100px
+
+.col
+  margin-top 20px
+  margin-bottom 20px
+  background url("http://www.2parale.ro/images/box-border.png")
+  padding 5px
+  border 1px solid #d2d3c3
+  border-radius 6px
+
+  .inner
+    min-height 300px
+    padding 30px
+    background url("http://www.2parale.ro/images/box-background.png")
+    border 1px solid #e2e2d8
+
+.container
+  h1
+    position: relative
+    margin 0 0 10px
+    padding 0 0 12px 0
+    font-weight: 600;
+    color: #686d73;
+    font-size: 24px;
+    font-family: 'Arial';
+    &:after
+      content ''
+      position absolute
+      height 6px
+      bottom 0
+      left 0
+      right 0
+      background: url("http://www.2parale.ro/images/header-border.png")
+  .row
+    margin-bottom 20px
+  .group-90, .group-30
+    .btn-group
+
+      &:first-child
+        width 0.25%
+
+      .btn
+        font-size 24px
+      span
+        display block
+        font-size 12px
+        color #999
+  .group-30 .btn-group:first-child
+      width 0.62%
+  .table-comission
+    thead
+      th:first-child
+        width 0.3%
+    .col1
+      text-align right
+      font-size 18px
+    .col2
+      position: relative
+
+      &:hover
+        .progresser
+          .amount
+            height 13px
+            border-radius 3px
+            font-size 12px
+
+      .price
+        display inline-block
+        width 27%
+        padding 0 7% 0 0
+        font-size 12px
+        text-align right
+      .progresser
+        position: absolute
+        bottom 0
+        left 0
+        right 0
+
+        &.orange .amount
+          background $orange
+        &.blue .amount
+          background $blue
+        &.green .amount
+          background $green
+        &.red .amount
+          background $red
+
+        .amount
+          display block
+          height 3px
+          background $gray
+          transition 0.3s all
+          font-size 0
+          color white
+          text-align center
+          line-height 1.2
+
+  .notifications
+    .date
+      font-size 18px
+      margin-top 0.5em
+    .notification
+      position: relative
+      padding 4px 0 4px
+      border-bottom 1px solid #ccc
+
+      &.new
+        background rgba(yellow, 0.3)
+
+      .type, .campaign
+        display: block
+        position absolute
+        z-index 1
+        top 4px
+        bottom 4px
+        left 0
+        padding 0 4px
+        max-width 55px
+        overflow hidden
+        white-space nowrap
+        background $gray
+        border-radius 3px
+        color white
+        font-size 11px
+        line-height 1.75
+        opacity 0.7
+
+        transition 0.5s max-width
+
+        &.red
+          background $red
+        &.orange
+          background $orange
+        &.blue
+          background $blue
+        &.green
+          background $green
+
+        &:hover
+          max-width 100%
+          z-index 3
+          opacity 1
+
+        .glyphicon
+          width 1.1em
+          margin-right 2px
+          font-size 11px
+      .campaign
+        left 59px
+      b
+        display inline-block
+        margin 0 0 0 118px
+        font-size 14px
+        &:hover
+          text-decoration underline
+    .more
+      margin 40px 0 0
+      text-align center
+  .filters
+    .filter-switch
+      float left
+      margin-right 10px
+    .all-filters
+      display none
+      padding 5px 10px
+      border 1px solid #ccc
+      border-radius 5px
+      overflow hidden
+
+      &.open
+        display block
+    .filter-row
+      margin 5px 0
+      .title
+        display: inline-block
+        width 100px
+        text-align right
+        padding 0 5px 0 0
+      .type
+        display: inline-block
+        padding 0 4px
+        white-space nowrap
+        background $gray
+        border-radius 3px
+        color white
+        font-size 11px
+        line-height 1.75
+        opacity 0.7
+
+        &.active, &:hover
+          cursor pointer
+
+          &.red
+            background $red
+          &.orange
+            background $orange
+          &.blue
+            background $blue
+          &.green
+            background $green
+
+        .glyphicon
+          width 1.1em
+          margin-right 2px
+          font-size 11px
+      .form-inline
+        input
+          width 100px
+

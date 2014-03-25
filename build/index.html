@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>2parale</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="FAF is an English taught Honors Program in Computer Science at the Technical University of Moldova."/>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+  <header class="header"></header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"><div class="col"><div class="inner">
+        <h1>Statistici</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group btn-group-justified group-90">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">90<span>zile</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="După valoarea comisioanelor">31<span>2Parale</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="După valoarea comisioanelor">17<span>Fashion</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group btn-group-justified group-30">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">30<span>zile</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">302<span>clickuri</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Venit per 100 clickuri">1.3<span>RON</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">3<span>Leaduri</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="72 vînzări în valoare de 14 582 RON">72<span>14 582 RON</span></button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="62 comisioane în valoare de 1 034 RON">62<span>1 034 RON</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-bordered table-comission">
+              <thead>
+                <tr>
+                  <th>Comisioane</th>
+                  <th>Valoare</th>
+                </tr>
+              </thead>
+              <tbody data-process="amounts">
+                <tr>
+                  <td class="col1">18</td>
+                  <td class="col2">
+                    <span class="price" data-value="307.2" data-color="orange">307.2 RON</span> În așteptare
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">58</td>
+                  <td class="col2">
+                    <span class="price" data-value="587.23" data-color="blue">587.23 RON</span> Aprobate
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">474</td>
+                  <td class="col2">
+                    <span class="price" data-value="1537.53" data-color="green">1 537.53 RON</span> Platite
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">504</td>
+                  <td class="col2">
+                    <span class="price" data-value="1887.12" data-color="red">1 887.12 RON</span> Respinse
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">1307</td>
+                  <td class="col2">
+                    <span class="price" data-value="4627.25">4 627.25 RON</span> Finalizate
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <h1>Notificări</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="notifications">
+              <div class="filters">
+                <div class="btn btn-default filter-switch" id="filter-switch"><i class="glyphicon glyphicon-filter"></i></div>
+                <div class="all-filters" id="all-filters">
+                  <div class="filter-row">
+                    <div class="title">by type</div>
+                    <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span>
+                    <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span>
+                  </div>
+                  <div class="filter-row">
+                    <div class="title">by campaign</div>
+                    <span class="type blue">Nume campanie</span>
+                    <span class="type green">Campanie nume</span>
+                    <span class="type orange">Alt nume</span>
+                  </div>
+                  <div class="filter-row">
+                    <form class="form-inline" role="form">
+                      <div class="form-group title">by date</div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail2">From date</label>
+                        <input type="text" class="form-control" id="date-from" placeholder="27/03/2014">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword2">To date</label>
+                        <input type="text" class="form-control" id="date-to" placeholder="30/03/2014">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="date">Azi</div>
+              <div class="notification new">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification new">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification">
+                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign green">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
+              </div>
+              <div class="date">Ieri</div>
+              <div class="notification">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign green">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification">
+                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign green">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
+              </div>
+              <div class="date">22 Martie</div>
+              <div class="notification">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign orange">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification">
+                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign green">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
+              </div>
+              <div class="notification">
+                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign blue">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
+              </div>
+              <div class="more">
+                <a href="#" class="btn btn-default">Arată notificările mai vechi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div></div>
+      <div class="col-md-4"><div class="col"><div class="inner"></div></div></div>
+    </div>
+  </div>
+  <footer class="footer"></footer>
+</body>
+</html>
