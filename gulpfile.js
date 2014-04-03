@@ -70,7 +70,7 @@ gulp.task('development-bootstrap', function(){
 gulp.task('development-script', function(){
   // Scripts
   return gulp.src('./src/script/*.coffee')
-    .pipe(coffee({bare: true, join: true, sourceMap: true}).on('error', gutil.log))
+    .pipe(coffee({bare: true, join: true, sourceMap: false}).on('error', gutil.log))
     .pipe(gulp.dest('./build/js'))
     .pipe(livereload(server))
 })
@@ -91,7 +91,7 @@ gulp.task('_watch', ['development', 'listen'], function(){
   })
 
   // Watch script changes
-  var watcher_script = gulp.watch('./src/script/**/*', ['development-script'])
+  var watcher_script = gulp.watch('./src/script/*', ['development-script'])
   watcher_script.on('changed', function(e){
     console.log(e.type + '-' + e.path)
   })

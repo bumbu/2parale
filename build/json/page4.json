@@ -1,0 +1,35 @@
+{"status": "success"
+, "page": "4"
+, "total_pages": "4"
+, "notifications":[
+  {
+    "type": "campaign"
+  , "campaign_title": "Nume Campanie"
+  , "description": "<b>Nume afiliat</b> a aplicat pentru campanie"
+  , "datetime": "1395903088959"
+  }
+, {
+    "type": "campaign"
+  , "campaign_title": "Altă campanie"
+  , "description": "<b>Bumbu Alex</b> a aplicat pentru campanie"
+  , "datetime": "1395853088959"
+  }
+, {
+    "type": "commission"
+  , "campaign_title": "Titlul"
+  , "description": "<b>Ion vasilescu</b> a înregistrat 324.56 RON"
+  , "datetime": "1395803088959"
+  }
+, {
+    "type": "commission"
+  , "campaign_title": "Ciocolata"
+  , "description": "<b>Andrei vasilescu</b> a înregistrat 64.56 RON"
+  , "datetime": "1395753088959"
+  }
+, {
+    "type": "campaign"
+  , "campaign_title": "Titlul"
+  , "description": "<b>Artur</b> s-a dezabonat de la campanie"
+  , "datetime": "1395703088959"
+  }
+]}

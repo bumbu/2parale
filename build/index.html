@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
   <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.visible.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -138,37 +139,10 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="date">Azi</div>
-              <div class="notification new">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
+              <div class="notifications-container" id="notifications-container" data-template-date='<div class="date">{date}</div>' data-template-notification='<div class="notification"><span class="type {type-color}"><i class="glyphicon glyphicon-{icon}"></i>{type}</span><span class="campaign {campaign-color}">{campaign}</span>{description}</div>'>
+                <!-- empty -->
               </div>
-              <div class="notification new">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
-              </div>
-              <div class="notification">
-                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign green">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
-              </div>
-              <div class="date">Ieri</div>
-              <div class="notification">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign green">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
-              </div>
-              <div class="notification">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign blue">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
-              </div>
-              <div class="notification">
-                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign green">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
-              </div>
-              <div class="date">22 Martie</div>
-              <div class="notification">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign orange">Nume campanie</span><b>Nume afiliat</b> a aplicat pentru campanie
-              </div>
-              <div class="notification">
-                <span class="type red"><i class="glyphicon glyphicon-bullhorn"></i>Campainie</span><span class="campaign green">Nume campanie</span><b>Alt afiliat</b> a aplicat pentru campanie
-              </div>
-              <div class="notification">
-                <span class="type orange"><i class="glyphicon glyphicon-usd"></i>Comision</span><span class="campaign blue">Campanie nume</span><b>Nume afiliat</b> a înregistrat 324.56 RON
-              </div>
-              <div class="more">
+              <div class="more" id="more">
                 <a href="#" class="btn btn-default">Arată notificările mai vechi</a>
               </div>
             </div>
